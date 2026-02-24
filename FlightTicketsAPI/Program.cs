@@ -1,3 +1,5 @@
+using FlightTicketsAPI.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,6 +21,9 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = "swagger";
     });
 }
+// Add services to the container.
+builder.Services.Configure<FlightTicketsDBSettings>(
+    builder.Configuration.GetSection("FlightTicketsDB"));
 
 app.UseHttpsRedirection();
 

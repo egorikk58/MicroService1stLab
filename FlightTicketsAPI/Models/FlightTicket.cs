@@ -1,14 +1,17 @@
 ﻿using FlightTicketsAPI.Attributes;
 using System.ComponentModel.DataAnnotations;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace FlightTicketsAPI.Models
 {
     [FlightDatesRange]
     public class FlightTicket
     {
-        [Key]
-        public long Id { get; set; }
-
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? Id { get; set; }
+       
         [Required(ErrorMessage = "Необходимо ввести номер рейса!")]
         [RegularExpression(@"^[A-Z]{2}\s\d{1,4}$", ErrorMessage = "Неверный формат номера рейса!'")]
         public string FlightNumber { get; set; } = string.Empty;

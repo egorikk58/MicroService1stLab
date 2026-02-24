@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\FlightTicketsAPI.csproj": {}
+    "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.csproj": {}
   },
   "projects": {
-    "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\FlightTicketsAPI.csproj": {
+    "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\FlightTicketsAPI.csproj",
+        "projectUniqueName": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.csproj",
         "projectName": "FlightTicketsAPI",
-        "projectPath": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\FlightTicketsAPI.csproj",
-        "packagesPath": "C:\\Users\\kosti\\.nuget\\packages\\",
-        "outputPath": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\obj\\",
+        "projectPath": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.csproj",
+        "packagesPath": "C:\\Users\\egork\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio\\General tools\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kosti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\egork\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,12 +44,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.1.2, )"
@@ -75,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
