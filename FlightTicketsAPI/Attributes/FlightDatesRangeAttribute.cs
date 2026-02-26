@@ -13,7 +13,7 @@ namespace FlightTicketsAPI.Attributes
 
         public override bool IsValid(object? value)
         {
-            if(value is not FlightTicket ticket)
+            if(value is not DtoFlightTicket ticket)
             {
                 return false;
             }

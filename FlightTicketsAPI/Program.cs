@@ -9,6 +9,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add services to the container.
+builder.Services.Configure<FlightTicketsDBSettings>(
+    builder.Configuration.GetSection("FlightTicketsDB"));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,9 +25,6 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = "swagger";
     });
 }
-// Add services to the container.
-builder.Services.Configure<FlightTicketsDBSettings>(
-    builder.Configuration.GetSection("FlightTicketsDB"));
 
 app.UseHttpsRedirection();
 
