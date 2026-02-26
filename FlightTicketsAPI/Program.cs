@@ -1,9 +1,11 @@
 using FlightTicketsAPI.Models;
+using FlightTicketsAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+// Add services to the container.
+builder.Services.AddSingleton<FlightTicketService>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();

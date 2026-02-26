@@ -7,6 +7,7 @@ namespace FlightTicketsAPI.Models
     [FlightDatesRange]
     public class DtoFlightTicket
     {
+        public string? Id { get; set; }
         [Required(ErrorMessage = "Необходимо ввести номер рейса!")]
         [RegularExpression(@"^[A-Z]{2}\s\d{1,4}$", ErrorMessage = "Неверный формат номера рейса!'")]
         public string FlightNumber { get; set; } = string.Empty;

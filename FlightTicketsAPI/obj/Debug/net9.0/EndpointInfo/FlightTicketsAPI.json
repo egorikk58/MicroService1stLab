@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/FlightTicket"
+                    "$ref": "#/components/schemas/DtoFlightTicket"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/FlightTicket"
+                    "$ref": "#/components/schemas/DtoFlightTicket"
                   }
                 }
               },
@@ -34,158 +34,11 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/FlightTicket"
+                    "$ref": "#/components/schemas/DtoFlightTicket"
                   }
                 }
               }
             }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "FlightTickets"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FlightTicket"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FlightTicket"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/FlightTicket"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlightTicket"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlightTicket"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlightTicket"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/FlightTickets/{id}": {
-      "get": {
-        "tags": [
-          "FlightTickets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlightTicket"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlightTicket"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FlightTicket"
-                }
-              }
-            }
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "FlightTickets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FlightTicket"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/FlightTicket"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/FlightTicket"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "FlightTickets"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
           }
         }
       }
@@ -193,7 +46,7 @@
   },
   "components": {
     "schemas": {
-      "FlightTicket": {
+      "DtoFlightTicket": {
         "required": [
           "arrivalCode",
           "arrivalTime",
@@ -206,8 +59,8 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string",
+            "nullable": true
           },
           "flightNumber": {
             "minLength": 1,
