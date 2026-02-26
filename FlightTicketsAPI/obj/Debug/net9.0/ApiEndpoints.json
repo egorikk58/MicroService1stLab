@@ -18,5 +18,120 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "Create",
+    "RelativePath": "api/FlightTickets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "FlightTicketsAPI.Models.DtoFlightTicket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FlightTicketsAPI.Models.DtoFlightTicket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "GetById",
+    "RelativePath": "api/FlightTickets/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FlightTicketsAPI.Models.DtoFlightTicket",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "Update",
+    "RelativePath": "api/FlightTickets/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedDto",
+        "Type": "FlightTicketsAPI.Models.DtoFlightTicket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "Delete",
+    "RelativePath": "api/FlightTickets/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "ClearAllTest",
+    "RelativePath": "api/FlightTickets/test/clear",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "SeedDataTest",
+    "RelativePath": "api/FlightTickets/test/seed/{count}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

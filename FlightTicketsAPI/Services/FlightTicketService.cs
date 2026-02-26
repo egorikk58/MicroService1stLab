@@ -29,5 +29,9 @@ namespace FlightTicketsAPI.Services
             await _ticketsCollection.ReplaceOneAsync(x => x.Id == id, updatedEntityFlightTicket);
         public async Task DeleteAsync(string id) => 
             await _ticketsCollection.DeleteOneAsync(x => x.Id == id);
+        public async Task CreateManyAsync(List<EntityFlightTicket> entities) =>
+            await _ticketsCollection.InsertManyAsync(entities);
+        public async Task ClearAllAsync() =>
+            await _ticketsCollection.DeleteManyAsync(_ => true);
     }
 }
