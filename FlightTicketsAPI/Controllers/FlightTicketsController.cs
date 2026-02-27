@@ -139,5 +139,27 @@ namespace FlightTicketsAPI.Controllers
             await _ticketService.CreateManyAsync(entities);
             return Ok(new { message = "Элементы добавлены", count = entities.Count });
         }
+
+        [HttpGet("filter")]
+        public async Task<ActionResult<List<DtoFlightTicket>>> GetFiltered([FromQuery] FlightTicketFilter ftl)
+        {
+            var entities = await _ticketService.GetFilteredAsync(ftl);
+            if(entities.Count == 0)
+            {
+                return NotFound(new { message = "Билетов с таким фильтром не найдено" });
+            }
+            var dtos = entities.Select(i => new DtoFlightTicket
+            {
+                Id = i.Id,
+                FlightNumber = i.FlightNumber,
+                DepartureCode = i.DepartureCode,
+                ArrivalCode = i.ArrivalCode,
+                Seat = i.Seat,
+                Price = i.Price,
+                DepartureTime = i.DepartureTime,
+                ArrivalTime = i.ArrivalTime
+            }).ToList();
+            return Ok(dtos);
+        }
     }
 }

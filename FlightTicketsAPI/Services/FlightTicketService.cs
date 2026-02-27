@@ -33,5 +33,39 @@ namespace FlightTicketsAPI.Services
             await _ticketsCollection.InsertManyAsync(entities);
         public async Task ClearAllAsync() =>
             await _ticketsCollection.DeleteManyAsync(_ => true);
+        public async Task<List<EntityFlightTicket>> GetFilteredAsync(FlightTicketFilter ftl)
+        {
+            var builder = Builders<EntityFlightTicket>.Filter;
+            var filter = builder.Empty;
+            if (!string.IsNullOrWhiteSpace(ftl.FlightNumber))
+            {
+                filter &= builder.Eq(x => x.FlightNumber, ftl.FlightNumber);
+            }
+            if (!string.IsNullOrWhiteSpace(ftl.DepartureCode))
+            {
+                filter &= builder.Eq(x => x.DepartureCode, ftl.DepartureCode);
+            }
+            if (!string.IsNullOrWhiteSpace(ftl.ArrivalCode))
+            {
+                filter &= builder.Eq(x => x.ArrivalCode, ftl.ArrivalCode);
+            }
+            if (ftl.MinPrice.HasValue)
+            {
+                filter &= builder.Gte(x => x.Price, ftl.MinPrice.Value);
+            }
+            if (ftl.MaxPrice.HasValue)
+            {
+                filter &= builder.Lte(x => x.Price, ftl.MaxPrice.Value);
+            }
+            if (ftl.DepartureDateFrom.HasValue)
+            {
+                filter &= builder.Gte(x => x.DepartureTime, ftl.DepartureDateFrom.Value);
+            }
+            if (ftl.DepartureDateTo.HasValue)
+            {
+                filter &= builder.Lte(x => x.DepartureTime, ftl.DepartureDateTo.Value);
+            }
+            return await _ticketsCollection.Find(filter).ToListAsync();
+        }
     }
 }

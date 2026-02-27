@@ -110,8 +110,8 @@
   },
   {
     "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
-    "Method": "ClearAllTest",
-    "RelativePath": "api/FlightTickets/test/clear",
+    "Method": "ClearAll",
+    "RelativePath": "api/FlightTickets/clearall",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -120,15 +120,71 @@
   },
   {
     "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
-    "Method": "SeedDataTest",
-    "RelativePath": "api/FlightTickets/test/seed/{count}",
+    "Method": "GetFiltered",
+    "RelativePath": "api/FlightTickets/filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FlightNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DepartureCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArrivalCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "DepartureDateFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "DepartureDateTo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[FlightTicketsAPI.Models.DtoFlightTicket, FlightTicketsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
+    "Method": "InsertMany",
+    "RelativePath": "api/FlightTickets/insertmany",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "count",
-        "Type": "System.Int32",
+        "Name": "dtos",
+        "Type": "System.Collections.Generic.List\u00601[[FlightTicketsAPI.Models.DtoFlightTicket, FlightTicketsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
