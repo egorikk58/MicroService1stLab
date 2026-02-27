@@ -112,43 +112,32 @@ namespace FlightTicketsAPI.Controllers
             return NoContent();
         }
 
-        [HttpDelete("test/clear")]
-        public async Task<IActionResult> ClearAllTest()
+        [HttpDelete("clearall")]
+        public async Task<IActionResult> ClearAll()
         {
             await _ticketService.ClearAllAsync();
             return Ok(new { message = "Все элементы удалены из базы" });
         }
 
-        [HttpPost("test/seed/{count}")]
-        public async Task<IActionResult> SeedDataTest(int count)
+        [HttpPost("insertmany")]
+        public async Task<IActionResult> InsertMany([FromBody] List<DtoFlightTicket> dtos)
         {
-            var random = new Random();
-            var airports = new[] { "SVO", "JFK", "LHR", "DXB", "HND" };
-            var batch = new List<EntityFlightTicket>();
-
-            for (int i = 0; i < count; i++)
+            if(dtos == null || dtos.Count == 0)
             {
-                batch.Add(new EntityFlightTicket
-                {
-                    FlightNumber = $"{(char)random.Next(65, 91)}{(char)random.Next(65, 91)} {random.Next(100, 9999)}",
-                    DepartureCode = airports[random.Next(airports.Length)],
-                    ArrivalCode = airports[random.Next(airports.Length)],
-                    Seat = $"{(char)random.Next(65, 71)}{random.Next(1, 50)}",
-                    Price = random.Next(1000, 100000),
-                    DepartureTime = DateTime.UtcNow.AddDays(random.Next(1, 10)),
-                    ArrivalTime = DateTime.UtcNow.AddDays(random.Next(11, 20))
-                });
+                return BadRequest(new { message = "Список пуст" });
             }
-
-            var sw = System.Diagnostics.Stopwatch.StartNew();
-            await _ticketService.CreateManyAsync(batch);
-            sw.Stop();
-
-            return Ok(new
+            var entities = dtos.Select(i => new EntityFlightTicket
             {
-                message = $"Успешно добавлено {count} элементов",
-                timeElapsedSeconds = sw.Elapsed.TotalSeconds
-            });
+                FlightNumber = i.FlightNumber,
+                DepartureCode = i.DepartureCode,
+                ArrivalCode = i.ArrivalCode,
+                Seat = i.Seat,
+                Price = i.Price,
+                DepartureTime = i.DepartureTime,
+                ArrivalTime = i.ArrivalTime
+            }).ToList();
+            await _ticketService.CreateManyAsync(entities);
+            return Ok(new { message = "Элементы добавлены", count = entities.Count });
         }
     }
 }

@@ -1,57 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\",
+  "WorkspaceRootPath": "D:\\microservices\\FlightTicketsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\controllers\\flightticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\controllers\\flightticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\flightticketsapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\flightticketsapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\services\\flightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\services\\flightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\services\\flightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\factories\\apifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\factories\\apifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\flightticketsapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\flightticketsapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\flightticketsapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\flightticketsapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\models\\flightticketsdbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\controllers\\flightticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\controllers\\flightticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\flightticketsdbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\flightticketsdbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\egork\\source\\repos\\MicroService1stLab\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|c:\\users\\egork\\source\\repos\\microservice1stlab\\flightticketsapi\\flightticketsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\flightticketsapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\egork\\AppData\\Local\\SourceServer\\3a170cfb70b182d378ec52584d898fc5d63d0f648dffb1cd498d04e20749fdcb\\FlightTicketsAPI\\Models\\FlightTicket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,64 +50,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FlightTicketsAPI.http",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.http",
-              "RelativeDocumentMoniker": "FlightTicketsAPI\\FlightTicketsAPI.http",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.http",
-              "RelativeToolTip": "FlightTicketsAPI\\FlightTicketsAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-02-26T22:54:12.609Z",
+              "DocumentIndex": 4,
+              "Title": "FlightTicketsAPI.Tests.csproj",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj",
+              "RelativeDocumentMoniker": "FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj",
+              "RelativeToolTip": "FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-27T14:49:55.806Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "FlightTicketsAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\appsettings.json",
-              "RelativeToolTip": "FlightTicketsAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-26T20:12:04.978Z",
+              "Title": "ApiFactory.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
+              "RelativeDocumentMoniker": "FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
+              "RelativeToolTip": "FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T13:51:49.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "FlightTicketsApiTest.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
+              "RelativeDocumentMoniker": "FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
+              "RelativeToolTip": "FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAowDkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T13:50:31.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FlightTicketService.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Services\\FlightTicketService.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Services\\FlightTicketService.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Services\\FlightTicketService.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Services\\FlightTicketService.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Services\\FlightTicketService.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Services\\FlightTicketService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA+wCMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T21:13:50.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EntityFlightTicket.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wAgAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T20:50:23.852Z",
               "EditorCaption": ""
@@ -127,115 +129,73 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "FlightTicketsDBSettings.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T20:30:35.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T20:30:35.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "FlightTicketsController.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAYwJIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-12T17:25:48.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "FlightDatesRangeAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T17:21:13.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T17:21:13.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "DtoFlightTicket.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
-              "ToolTip": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-12T17:08:54.627Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Program.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Program.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\Program.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Program.cs",
               "RelativeToolTip": "FlightTicketsAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T16:50:52.375Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2026-02-12T16:50:52.375Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "FlightTicketsAPI\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\FlightTicketsAPI\\appsettings.Development.json",
-              "RelativeToolTip": "FlightTicketsAPI\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-24T19:24:53.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FlightTicket.cs",
-              "DocumentMoniker": "C:\\Users\\egork\\AppData\\Local\\SourceServer\\3a170cfb70b182d378ec52584d898fc5d63d0f648dffb1cd498d04e20749fdcb\\FlightTicketsAPI\\Models\\FlightTicket.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\3a170cfb70b182d378ec52584d898fc5d63d0f648dffb1cd498d04e20749fdcb\\FlightTicketsAPI\\Models\\FlightTicket.cs",
-              "ToolTip": "C:\\Users\\egork\\AppData\\Local\\SourceServer\\3a170cfb70b182d378ec52584d898fc5d63d0f648dffb1cd498d04e20749fdcb\\FlightTicketsAPI\\Models\\FlightTicket.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\3a170cfb70b182d378ec52584d898fc5d63d0f648dffb1cd498d04e20749fdcb\\FlightTicketsAPI\\Models\\FlightTicket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T19:20:06.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FlightTicketsAPI.csproj",
-              "DocumentMoniker": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.csproj",
-              "RelativeDocumentMoniker": "FlightTicketsAPI\\FlightTicketsAPI.csproj",
-              "ToolTip": "C:\\Users\\egork\\Source\\Repos\\MicroService1stLab\\FlightTicketsAPI\\FlightTicketsAPI.csproj",
-              "RelativeToolTip": "FlightTicketsAPI\\FlightTicketsAPI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-24T20:35:59.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\egork\\source\\repos\\MicroService1stLab\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAqwOEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-24T20:46:14.692Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             }
           ]
         }
