@@ -1,14 +1,13 @@
 ﻿using FlightTicketsAPI.Attributes;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace FlightTicketsAPI.Models
 {
     [FlightDatesRange]
-    public class FlightTicket
+    public class DtoFlightTicket
     {
-        [Key]
-        public long Id { get; set; }
-
+        public string? Id { get; set; }
         [Required(ErrorMessage = "Необходимо ввести номер рейса!")]
         [RegularExpression(@"^[A-Z]{2}\s\d{1,4}$", ErrorMessage = "Неверный формат номера рейса!'")]
         public string FlightNumber { get; set; } = string.Empty;
@@ -30,9 +29,9 @@ namespace FlightTicketsAPI.Models
         public decimal Price { get; set; }
 
         [Required(ErrorMessage = "Необходимо ввести дату и время отправления!")]
-        public DateTimeOffset DepartureTime { get; set; }
+        public DateTime DepartureTime { get; set; }
 
         [Required(ErrorMessage = "Необходимо ввести дату и время прибытия!")]
-        public DateTimeOffset ArrivalTime { get; set; }
+        public DateTime ArrivalTime { get; set; }
     }
 }

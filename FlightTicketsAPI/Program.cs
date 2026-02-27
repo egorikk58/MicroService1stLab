@@ -1,11 +1,19 @@
+using FlightTicketsAPI.Models;
+using FlightTicketsAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+// Add services to the container.
+builder.Services.AddSingleton<FlightTicketService>();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Add services to the container.
+builder.Services.Configure<FlightTicketsDBSettings>(
+    builder.Configuration.GetSection("FlightTicketsDB"));
 
 var app = builder.Build();
 
@@ -27,3 +35,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

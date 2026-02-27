@@ -1,4 +1,5 @@
 ﻿using FlightTicketsAPI.Models;
+using FlightTicketsAPI.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
@@ -9,124 +10,156 @@ namespace FlightTicketsAPI.Controllers
     [ApiController]
     public class FlightTicketsController : ControllerBase
     {
-        private static List<FlightTicket> flightTickets = new List<FlightTicket>()
+        private readonly FlightTicketService _ticketService;
+        public FlightTicketsController(FlightTicketService ticketService)
         {
-            new FlightTicket
-            {
-                Id = 1,
-                FlightNumber = "SU 100",
-                DepartureCode = "SVO",
-                ArrivalCode = "LED",
-                Seat = "A01",
-                Price = 4500.00m,
-                DepartureTime = DateTimeOffset.Parse("20.05.2026 10:00 +03:00", CultureInfo.GetCultureInfo("ru-RU")),
-                ArrivalTime = DateTimeOffset.Parse("20.05.2026 11:30 +03:00", CultureInfo.GetCultureInfo("ru-RU"))
-            },
-            new FlightTicket
-            {
-                Id = 2,
-                FlightNumber = "SU 204",
-                DepartureCode = "SVO",
-                ArrivalCode = "PEK",
-                Seat = "B12",
-                Price = 62000.50m,
-                DepartureTime = DateTimeOffset.Parse("15.06.2026 18:45 +03:00", CultureInfo.GetCultureInfo("ru-RU")),
-                ArrivalTime = DateTimeOffset.Parse("16.06.2026 07:15 +08:00", CultureInfo.GetCultureInfo("ru-RU"))
-            },
-            new FlightTicket
-            {
-                Id = 3,
-                FlightNumber = "AF 1145",
-                DepartureCode = "CDG",
-                ArrivalCode = "SVO",
-                Seat = "C05",
-                Price = 38000.00m,
-                DepartureTime = DateTimeOffset.Parse("10.07.2026 09:20 +02:00", CultureInfo.GetCultureInfo("ru-RU")),
-                ArrivalTime = DateTimeOffset.Parse("10.07.2026 14:10 +03:00", CultureInfo.GetCultureInfo("ru-RU"))
-            },
-            new FlightTicket
-            {
-                Id = 4,
-                FlightNumber = "BA 0816",
-                DepartureCode = "LHR",
-                ArrivalCode = "JFK",
-                Seat = "F22",
-                Price = 85000.99m,
-                DepartureTime = DateTimeOffset.Parse("01.08.2026 13:00 +01:00", CultureInfo.GetCultureInfo("ru-RU")),
-                ArrivalTime = DateTimeOffset.Parse("01.08.2026 16:00 -04:00", CultureInfo.GetCultureInfo("ru-RU"))
-            }
-        };
-
-        [HttpGet]
-        public ActionResult<List<FlightTicket>> GetAll()
-        {
-            if(flightTickets.Count == 0)
-            {
-                return NoContent();
-            }
-            return Ok(flightTickets);
+            _ticketService = ticketService;
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<FlightTicket> GetById(long id)
+        [HttpGet]
+        public async Task<ActionResult<List<DtoFlightTicket>>> GetAll()
         {
-            FlightTicket? ft = flightTickets.FirstOrDefault(i => i.Id == id);
-            if(ft == null)
+            var entities = await _ticketService.GetAllAsync();
+            var dtos = entities.Select(e => new DtoFlightTicket
             {
-                return NotFound(new { ErrorMessage = "Билета с таким ID не существует!" });
+                Id = e.Id,
+                FlightNumber = e.FlightNumber,
+                DepartureCode = e.DepartureCode,
+                ArrivalCode = e.ArrivalCode,
+                Seat = e.Seat,
+                Price = e.Price,
+                DepartureTime = e.DepartureTime,
+                ArrivalTime = e.ArrivalTime
+            }).ToList();
+
+            return Ok(dtos);
+        }
+        [HttpGet("{id:length(24)}")]
+        public async Task<ActionResult<DtoFlightTicket>> GetById(string id)
+        {
+            var entity = await _ticketService.GetAsync(id);
+            if (entity is null)
+            {
+                return NotFound(new { message = $"Билет с ID {id} не найден" });
             }
-            return Ok(ft);
+            var dto = new DtoFlightTicket
+            {
+                Id = entity.Id,
+                FlightNumber = entity.FlightNumber,
+                DepartureCode = entity.DepartureCode,
+                ArrivalCode = entity.ArrivalCode,
+                Seat = entity.Seat,
+                Price = entity.Price,
+                DepartureTime = entity.DepartureTime,
+                ArrivalTime = entity.ArrivalTime
+            };
+            return Ok(dto);
         }
 
         [HttpPost]
-        public ActionResult<FlightTicket> Create([FromBody] FlightTicket ft)
+        public async Task<ActionResult<DtoFlightTicket>> Create([FromBody] DtoFlightTicket dto)
         {
-            if (!ModelState.IsValid)
+            var entity = new EntityFlightTicket
             {
-                return BadRequest(ModelState);
-            }
-            long nextId = flightTickets.Any() ? flightTickets.Max(t => t.Id) + 1 : 1;
-            ft.Id = nextId;
-            flightTickets.Add(ft);
-            return CreatedAtAction(nameof(GetById), new { id = ft.Id }, ft);
+                FlightNumber = dto.FlightNumber,
+                DepartureCode = dto.DepartureCode,
+                ArrivalCode = dto.ArrivalCode,
+                Seat = dto.Seat,
+                Price = dto.Price,
+                DepartureTime = dto.DepartureTime,
+                ArrivalTime = dto.ArrivalTime
+            };
+
+            await _ticketService.CreateAsync(entity);
+
+            dto.Id = entity.Id;
+            return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Update(long id, [FromBody] FlightTicket newTicket)
+        [HttpPut("{id:length(24)}")]
+        public async Task<IActionResult> Update(string id, [FromBody] DtoFlightTicket updatedDto)
         {
-            if(id != newTicket.Id)
-            {
-                return BadRequest(new { ErrorMessage = "ID не совпадает с ID записи!" });
-            }
-            FlightTicket? oldTicket = flightTickets.FirstOrDefault(i => i.Id == id);
-            if(oldTicket == null)
-            {
-                return NotFound(new { ErrorMessage = "Билет для обновления не найден" });
-            }
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            oldTicket.FlightNumber = newTicket.FlightNumber;
-            oldTicket.ArrivalTime = newTicket.ArrivalTime;
-            oldTicket.ArrivalCode = newTicket.ArrivalCode;
-            oldTicket.DepartureTime = newTicket.DepartureTime;
-            oldTicket.DepartureCode = newTicket.DepartureCode;
-            oldTicket.Price = newTicket.Price;
-            oldTicket.Seat = newTicket.Seat;
-            return Ok(oldTicket);        
-        }
+            var ticket = await _ticketService.GetAsync(id);
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
-        {
-            FlightTicket? ft = flightTickets.FirstOrDefault(i => i.Id == id);
-            if(ft == null)
+            if (ticket is null) return NotFound();
+
+            var entityUpdate = new EntityFlightTicket
             {
-                return NotFound(new { ErrorMessage = "Билет с таким ID не найден!" });
-            }
-            flightTickets.Remove(ft);
+                Id = id,
+                FlightNumber = updatedDto.FlightNumber,
+                DepartureCode = updatedDto.DepartureCode,
+                ArrivalCode = updatedDto.ArrivalCode,
+                Seat = updatedDto.Seat,
+                Price = updatedDto.Price,
+                DepartureTime = updatedDto.DepartureTime,
+                ArrivalTime = updatedDto.ArrivalTime
+            };
+
+            await _ticketService.UpdateAsync(id, entityUpdate);
+
             return NoContent();
+        }
+
+        [HttpDelete("{id:length(24)}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var ticket = await _ticketService.GetAsync(id);
+
+            if (ticket is null) return NotFound();
+
+            await _ticketService.DeleteAsync(id);
+
+            return NoContent();
+        }
+
+        [HttpDelete("clearall")]
+        public async Task<IActionResult> ClearAll()
+        {
+            await _ticketService.ClearAllAsync();
+            return Ok(new { message = "Все элементы удалены из базы" });
+        }
+
+        [HttpPost("insertmany")]
+        public async Task<IActionResult> InsertMany([FromBody] List<DtoFlightTicket> dtos)
+        {
+            if(dtos == null || dtos.Count == 0)
+            {
+                return BadRequest(new { message = "Список пуст" });
+            }
+            var entities = dtos.Select(i => new EntityFlightTicket
+            {
+                FlightNumber = i.FlightNumber,
+                DepartureCode = i.DepartureCode,
+                ArrivalCode = i.ArrivalCode,
+                Seat = i.Seat,
+                Price = i.Price,
+                DepartureTime = i.DepartureTime,
+                ArrivalTime = i.ArrivalTime
+            }).ToList();
+            await _ticketService.CreateManyAsync(entities);
+            return Ok(new { message = "Элементы добавлены", count = entities.Count });
+        }
+
+        [HttpGet("filter")]
+        public async Task<ActionResult<List<DtoFlightTicket>>> GetFiltered([FromQuery] FlightTicketFilter ftl)
+        {
+            var entities = await _ticketService.GetFilteredAsync(ftl);
+            if(entities.Count == 0)
+            {
+                return NotFound(new { message = "Билетов с таким фильтром не найдено" });
+            }
+            var dtos = entities.Select(i => new DtoFlightTicket
+            {
+                Id = i.Id,
+                FlightNumber = i.FlightNumber,
+                DepartureCode = i.DepartureCode,
+                ArrivalCode = i.ArrivalCode,
+                Seat = i.Seat,
+                Price = i.Price,
+                DepartureTime = i.DepartureTime,
+                ArrivalTime = i.ArrivalTime
+            }).ToList();
+            return Ok(dtos);
         }
     }
 }
