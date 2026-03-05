@@ -91,3 +91,5 @@ D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\refint\Fligh
 D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\FlightTicketsAPI.pdb
 D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\FlightTicketsAPI.genruntimeconfig.cache
 D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\ref\FlightTicketsAPI.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Prometheus.NetStandard.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Prometheus.AspNetCore.dll

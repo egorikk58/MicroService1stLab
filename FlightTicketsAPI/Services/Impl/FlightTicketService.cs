@@ -2,9 +2,9 @@
 using FlightTicketsAPI.Models;
 using Microsoft.Extensions.Options;
 
-namespace FlightTicketsAPI.Services
+namespace FlightTicketsAPI.Services.Impl
 {
-    public class FlightTicketService
+    public class FlightTicketService : IFlightTicketService
     {
         private readonly IMongoCollection<EntityFlightTicket> _ticketsCollection;
 
@@ -29,8 +29,6 @@ namespace FlightTicketsAPI.Services
             await _ticketsCollection.ReplaceOneAsync(x => x.Id == id, updatedEntityFlightTicket);
         public async Task DeleteAsync(string id) => 
             await _ticketsCollection.DeleteOneAsync(x => x.Id == id);
-        public async Task CreateManyAsync(List<EntityFlightTicket> entities) =>
-            await _ticketsCollection.InsertManyAsync(entities);
         public async Task ClearAllAsync() =>
             await _ticketsCollection.DeleteManyAsync(_ => true);
         public async Task<List<EntityFlightTicket>> GetFilteredAsync(FlightTicketFilter ftl)
