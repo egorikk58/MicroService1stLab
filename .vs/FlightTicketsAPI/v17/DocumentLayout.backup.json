@@ -3,56 +3,68 @@
   "WorkspaceRootPath": "D:\\microservices\\FlightTicketsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\services\\impl\\flightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\services\\impl\\flightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\mapper\\flightticketmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\mapper\\flightticketmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\flightticketsapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\flightticketsapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\controllers\\flightticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\controllers\\flightticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\flightticketfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\flightticketfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\services\\iflightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\services\\iflightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\dtoflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\flightticketsapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\flightticketsapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\factories\\apifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\factories\\apifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\flightticketsapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\flightticketsapi.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\entityflightticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\services\\iflightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\services\\iflightticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\factories\\apifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\factories\\apifactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi.tests\\flightticketsapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1694896A-0AAF-4A01-BE0B-F518EB9D1214}|FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj|solutionrelative:flightticketsapi.tests\\flightticketsapitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\mapper\\flightticketmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\mapper\\flightticketmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\flightticketfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\flightticketfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\models\\flightticketsdbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\models\\flightticketsdbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|d:\\microservices\\flightticketsapi\\flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B481E73A-8435-409C-9333-D83157C7D370}|FlightTicketsAPI\\FlightTicketsAPI.csproj|solutionrelative:flightticketsapi\\attributes\\flightdatesrangeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,31 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlightTicketMapper.cs",
-              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
-              "RelativeDocumentMoniker": "FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
-              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
-              "RelativeToolTip": "FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-05T16:31:15.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "IFlightTicketService.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Services\\IFlightTicketService.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Services\\IFlightTicketService.cs",
@@ -98,20 +90,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "FlightTicketsController.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
+              "RelativeDocumentMoniker": "FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
+              "RelativeToolTip": "FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-12T17:25:48.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FlightTicketService.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Services\\Impl\\FlightTicketService.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Services\\Impl\\FlightTicketService.cs",
-              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Services\\Impl\\FlightTicketService.cs",
-              "RelativeToolTip": "FlightTicketsAPI\\Services\\Impl\\FlightTicketService.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAADwvwsAAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Services\\Impl\\FlightTicketService.cs*",
+              "RelativeToolTip": "FlightTicketsAPI\\Services\\Impl\\FlightTicketService.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T21:13:50.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "FlightTicketsAPI.http",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\FlightTicketsAPI.http",
+              "RelativeDocumentMoniker": "FlightTicketsAPI\\FlightTicketsAPI.http",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\FlightTicketsAPI.http",
+              "RelativeToolTip": "FlightTicketsAPI\\FlightTicketsAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-07T08:04:07.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FlightTicketMapper.cs",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
+              "RelativeDocumentMoniker": "FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
+              "RelativeToolTip": "FlightTicketsAPI\\Mapper\\FlightTicketMapper.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T16:31:15.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "FlightTicketsAPI\\appsettings.json",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\appsettings.json",
+              "RelativeToolTip": "FlightTicketsAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-07T08:03:59.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "FlightTicketsAPI\\appsettings.Development.json",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\appsettings.Development.json",
+              "RelativeToolTip": "FlightTicketsAPI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-07T08:05:28.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "FlightTicketFilter.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\FlightTicketFilter.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\FlightTicketFilter.cs",
@@ -123,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "FlightTicketsAPI.Tests.csproj",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj",
               "RelativeDocumentMoniker": "FlightTicketsAPI.Tests\\FlightTicketsAPI.Tests.csproj",
@@ -135,31 +189,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ApiFactory.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
               "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
               "RelativeToolTip": "FlightTicketsAPI.Tests\\Factories\\ApiFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvxwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T13:51:49.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "FlightTicketsApiTest.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
               "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
               "RelativeToolTip": "FlightTicketsAPI.Tests\\FlightTicketsApiTest.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T13:50:31.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "EntityFlightTicket.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\EntityFlightTicket.cs",
@@ -171,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "FlightTicketsDBSettings.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\FlightTicketsDBSettings.cs",
@@ -183,19 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FlightTicketsController.cs",
-              "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
-              "RelativeDocumentMoniker": "FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
-              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
-              "RelativeToolTip": "FlightTicketsAPI\\Controllers\\FlightTicketsController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T17:25:48.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 7,
               "Title": "FlightDatesRangeAttribute.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Attributes\\FlightDatesRangeAttribute.cs",
@@ -207,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DtoFlightTicket.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Models\\DtoFlightTicket.cs",
@@ -219,16 +261,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Program.cs",
               "RelativeDocumentMoniker": "FlightTicketsAPI\\Program.cs",
-              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Program.cs*",
-              "RelativeToolTip": "FlightTicketsAPI\\Program.cs*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAARAAAAAAAAAA==",
+              "ToolTip": "D:\\microservices\\FlightTicketsAPI\\FlightTicketsAPI\\Program.cs",
+              "RelativeToolTip": "FlightTicketsAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T16:50:52.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-12T16:50:52.375Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         },

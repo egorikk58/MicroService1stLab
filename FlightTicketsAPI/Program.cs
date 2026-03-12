@@ -36,6 +36,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+
+app.UseRouting();
 app.UseHttpMetrics();
 app.MapMetrics();
 
