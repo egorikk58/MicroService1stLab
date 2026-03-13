@@ -173,21 +173,5 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "FlightTicketsAPI.Controllers.FlightTicketsController",
-    "Method": "InsertMany",
-    "RelativePath": "api/FlightTickets/insertmany",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dtos",
-        "Type": "System.Collections.Generic.List\u00601[[FlightTicketsAPI.Models.DtoFlightTicket, FlightTicketsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]

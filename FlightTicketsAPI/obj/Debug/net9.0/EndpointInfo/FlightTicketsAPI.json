@@ -205,46 +205,6 @@
         }
       }
     },
-    "/api/FlightTickets/insertmany": {
-      "post": {
-        "tags": [
-          "FlightTickets"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/DtoFlightTicket"
-                }
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/DtoFlightTicket"
-                }
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/DtoFlightTicket"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/FlightTickets/filter": {
       "get": {
         "tags": [
@@ -353,10 +313,6 @@
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "nullable": true
-          },
           "flightNumber": {
             "minLength": 1,
             "pattern": "^[A-Z]{2}\\s\\d{1,4}$",
