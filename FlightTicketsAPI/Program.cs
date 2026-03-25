@@ -2,6 +2,7 @@ using FlightTicketsAPI.Models;
 using FlightTicketsAPI.Services;
 using FlightTicketsAPI.Services.Impl;
 using Prometheus;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,12 @@ builder.Services.AddSwaggerGen();
 // Add services to the container.
 builder.Services.Configure<FlightTicketsDBSettings>(
     builder.Configuration.GetSection("FlightTicketsDB"));
+
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    options.InstanceName = "FlightTicketsAPI:";
+});
 
 var app = builder.Build();
 
