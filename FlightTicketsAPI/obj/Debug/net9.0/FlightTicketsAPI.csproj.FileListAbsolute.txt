@@ -92,3 +92,13 @@ D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\FlightTicket
 D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\ref\FlightTicketsAPI.dll
 D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Prometheus.NetStandard.dll
 D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Prometheus.AspNetCore.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\StackExchange.Redis.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\bin\Debug\net9.0\System.Diagnostics.DiagnosticSource.dll
+D:\microservices\FlightTicketsAPI\FlightTicketsAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

@@ -2,6 +2,7 @@
 using FlightTicketsAPI.Models;
 using FlightTicketsAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 
 namespace FlightTicketsAPI.Controllers
 {
@@ -26,6 +27,10 @@ namespace FlightTicketsAPI.Controllers
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<DtoFlightTicket>> GetById(string id)
         {
+            if(!ObjectId.TryParse(id, out _))
+            {
+                return BadRequest(new { message = "Некорректный формат ID" });
+            }
             var entity = await _ticketService.GetAsync(id);
             if (entity is null)
             {
@@ -46,6 +51,10 @@ namespace FlightTicketsAPI.Controllers
         [HttpPut("{id:length(24)}")]
         public async Task<IActionResult> Update(string id, [FromBody] DtoFlightTicket updatedDto)
         {
+            if (!ObjectId.TryParse(id, out _))
+            {
+                return BadRequest(new { message = "Некорректный формат ID" });
+            }
             var ticket = await _ticketService.GetAsync(id);
             if (ticket is null) return NotFound();
             var entityUpdate = FlightTicketMapper.MapDtoToEntity(updatedDto);
@@ -57,6 +66,10 @@ namespace FlightTicketsAPI.Controllers
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> Delete(string id)
         {
+            if (!ObjectId.TryParse(id, out _))
+            {
+                return BadRequest(new { message = "Некорректный формат ID" });
+            }
             var ticket = await _ticketService.GetAsync(id);
             if (ticket is null) return NotFound();
             await _ticketService.DeleteAsync(id);
